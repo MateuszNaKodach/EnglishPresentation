@@ -5,26 +5,26 @@ package pl.edu.pwr.mateusznowak.englishpresentation.logic
  */
 class SimpleWallet : Wallet {
 
-    var moneyBalance:Double = 0.0;
+    var moneyBalance:Double = 0.0
 
     override fun putMoney(moneyValue: Double) {
-       moneyBalance = moneyBalance + moneyValue;
+       moneyBalance = moneyBalance + moneyValue
     }
 
     override fun getMoney(moneyValue: Double): Double {
         if(moneyValue<=moneyBalance){
-            moneyBalance = moneyBalance - moneyValue;
-            return moneyValue;
+            moneyBalance = moneyBalance - moneyValue
+            return moneyValue
         }
 
-        return 0.0;
+        return 0.0
     }
 
     override fun getMoneyAmount(): Double {
-        return moneyBalance;
+        return moneyBalance
     }
 
     override fun insolvent(): Boolean {
-        return moneyBalance==0.0;
+        return moneyBalance==0.0
     }
 }
