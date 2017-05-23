@@ -5,7 +5,7 @@ package pl.edu.pwr.mateusznowak.englishpresentation.logic
  */
 interface Wallet {
     fun putMoney(moneyValue: Double)
-    fun getMoney(moneyValue: Double):Double
+    fun takeMoney(moneyValue: Double):Double
     fun getMoneyAmount():Double
     fun insolvent():Boolean
 }

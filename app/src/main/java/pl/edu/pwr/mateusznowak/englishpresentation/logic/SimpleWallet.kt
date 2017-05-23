@@ -11,7 +11,7 @@ class SimpleWallet : Wallet {
        moneyBalance = moneyBalance + moneyValue
     }
 
-    override fun getMoney(moneyValue: Double): Double {
+    override fun takeMoney(moneyValue: Double): Double {
         if(moneyValue<=moneyBalance){
             moneyBalance = moneyBalance - moneyValue
             return moneyValue
